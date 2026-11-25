@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "assertionMethod": [
+    "did:web:chrysa712.github.io:thesis-did:build#key-1"
+  ],
+  "id": "did:web:chrysa712.github.io:thesis-did:build",
+  "service": [
+    {
+      "id": "did:web:chrysa712.github.io:thesis-did:build#status-list",
+      "serviceEndpoint": "http://127.0.0.1:8081/statuslists/1",
+      "type": "TokenStatusList"
+    }
+  ],
+  "verificationMethod": [
+    {
+      "controller": "did:web:chrysa712.github.io:thesis-did:build",
+      "id": "did:web:chrysa712.github.io:thesis-did:build#key-1",
+      "publicKeyJwk": {
+        "crv": "P-256",
+        "kty": "EC",
+        "x": "Jkpfo01SoIH6tyfIBVjTfpf_zKYlpFMvp3ibpEOUDrU",
+        "y": "O1VfqDVb3vx8OMSh68RgXzQ9uSqIjKr5ozZd8VK_qlk"
+      },
+      "type": "JsonWebKey2020"
+    }
+  ]
+}
